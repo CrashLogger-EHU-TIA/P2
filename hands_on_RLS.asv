@@ -1,0 +1,17 @@
+function hands_on_RLS %[outputArg1,outputArg2] = hands_on_RLS(inputArg1,inputArg2)
+
+clear all;
+clc;
+
+load Boston.mat;
+
+car_names = Boston.Properties.VariableNames
+
+X = Boston.lstat;
+Y = Boston.medv;
+
+mdl = fitlm(X,Y,"linear")
+%HANDS_ON_RLS Summary of this function goes here
+%   Detailed explanation goes here
+end
+
