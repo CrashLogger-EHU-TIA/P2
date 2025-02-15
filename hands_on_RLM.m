@@ -57,9 +57,7 @@ Y = Boston.medv;
 
 % Using {} to make cell arrays
 
-mdl = fitlm([X1, X2, X3], Y, "VarNames", {var_names{[13 7]}, 'lstat x age', var_names{14}})
-
-%% Ajustar modelo RP basado en lstat, lstat² para predecir medv con lstat y age combinados también
+%% Ajustar modelo RP basado en lstat, lstat² para predecir medv
 
 % Es un mejor modelo que el lineal segun el error!
 
